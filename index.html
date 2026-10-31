@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Rani Amelia - Teknik Komputer dan Jaringan</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 flex flex-col min-h-screen">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo / Brand Name -->
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-9 h-9 bg-gradient-to-tr from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center text-white font-extrabold text-lg shadow-md shadow-indigo-500/20">
+                        RA
+                    </div>
+                    <span class="font-bold text-xl text-white tracking-tight">Rani<span class="text-indigo-400">Amelia</span></span>
+                </div>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#beranda" class="text-slate-300 hover:text-indigo-400 font-medium transition-colors">Beranda</a>
+                    <a href="#tentang" class="text-slate-300 hover:text-indigo-400 font-medium transition-colors">Tentang</a>
+                    <a href="#pendidikan" class="text-slate-300 hover:text-indigo-400 font-medium transition-colors">Pendidikan</a>
+                    <a href="#keahlian" class="text-slate-300 hover:text-indigo-400 font-medium transition-colors">Keahlian</a>
+                    <a href="#proyek" class="text-slate-300 hover:text-indigo-400 font-medium transition-colors">Praktik & Proyek</a>
+                    <a href="#kontak" class="text-slate-300 hover:text-indigo-400 font-medium transition-colors">Kontak</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/6289529895825" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2.5 rounded-full font-medium transition-all shadow-md shadow-indigo-600/30 flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i> Hubungi WA
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#beranda" class="block py-2 text-slate-300 hover:text-indigo-400 font-medium">Beranda</a>
+            <a href="#tentang" class="block py-2 text-slate-300 hover:text-indigo-400 font-medium">Tentang</a>
+            <a href="#pendidikan" class="block py-2 text-slate-300 hover:text-indigo-400 font-medium">Pendidikan</a>
+            <a href="#keahlian" class="block py-2 text-slate-300 hover:text-indigo-400 font-medium">Keahlian</a>
+            <a href="#proyek" class="block py-2 text-slate-300 hover:text-indigo-400 font-medium">Praktik & Proyek</a>
+            <a href="#kontak" class="block py-2 text-slate-300 hover:text-indigo-400 font-medium">Kontak</a>
+            <a href="https://wa.me/6289529895825" target="_blank" class="block text-center w-full bg-indigo-600 text-white py-2.5 rounded-xl font-medium mt-4">
+                Hubungi via WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+
+        <!-- Hero Section -->
+        <section id="beranda" class="pt-16 pb-24 md:pt-28 md:pb-36 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-850 relative overflow-hidden">
+            <!-- Background Glow -->
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <!-- Intro Text -->
+                    <div class="space-y-6 text-center md:text-left">
+                        <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 rounded-full text-sm font-semibold">
+                            <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+                            SMK Ma'arif NU Tirto
+                        </span>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                            Halo, Saya <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Rani Amelia</span>
+                        </h1>
+                        <p class="text-slate-400 text-lg sm:text-xl leading-relaxed max-w-xl">
+                            Siswi jurusan <strong class="text-slate-200">Teknik Komputer dan Jaringan (TKJ)</strong> yang disiplin, teliti, bertanggung jawab, dan memiliki semangat belajar tinggi di dunia teknologi & jaringan.
+                        </p>
+
+                        <!-- Contact Badges -->
+                        <div class="flex flex-wrap gap-4 text-sm text-slate-300 pt-2 justify-center md:justify-start">
+                            <span class="flex items-center gap-2 bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700">
+                                <i class="fa-solid fa-location-dot text-indigo-400"></i> Pekalongan, Jawa Tengah
+                            </span>
+                            <span class="flex items-center gap-2 bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700">
+                                <i class="fa-solid fa-envelope text-indigo-400"></i> raniamelia@gmail.com
+                            </span>
+                            <span class="flex items-center gap-2 bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700">
+                                <i class="fa-solid fa-phone text-indigo-400"></i> 089529895825
+                            </span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
+                            <a href="#proyek" class="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-3.5 rounded-xl font-semibold shadow-lg shadow-indigo-600/30 text-center transition-all">
+                                Lihat Praktik & Proyek
+                            </a>
+                            <a href="#kontak" class="bg-slate-800 border border-slate-700 hover:bg-slate-700 text-slate-200 px-8 py-3.5 rounded-xl font-semibold text-center transition-all">
+                                Hubungi Saya
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Profile Image / Card -->
+                    <div class="flex justify-center">
+                        <div class="relative group">
+                            <!-- Glow decoration behind photo -->
+                            <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl blur-lg opacity-75 group-hover:opacity-100 transition duration-500 group-hover:duration-200"></div>
+                            
+                            <!-- Frame Container -->
+                            <div class="relative w-64 h-80 sm:w-72 sm:h-96 rounded-3xl p-3 bg-slate-800 border border-slate-700 shadow-2xl flex flex-col items-center justify-between">
+                                <!-- Photo Placeholder / Frame -->
+                                <div class="w-full h-full rounded-2xl overflow-hidden bg-slate-900 border border-slate-700/60 relative flex flex-col items-center justify-center text-center group-hover:border-indigo-500/50 transition-all">
+                                    
+                                    <!-- Foto Rani Amelia (Ganti attribute 'src' di bawah jika punya URL foto sendiri) -->
+                                    <img src="https://placehold.co/400x500/1e293b/6366f1?text=Foto+Rani+Amelia" 
+                                         alt="Foto Rani Amelia" 
+                                         class="w-full h-full object-cover rounded-2xl shadow-md transition-transform duration-500 group-hover:scale-105"
+                                         onerror="this.onerror=null; this.src='https://placehold.co/400x500/1e293b/6366f1?text=Foto+Rani+Amelia';">
+                                    
+                                    <!-- Badge status di pojok foto -->
+                                    <div class="absolute bottom-3 left-3 right-3 bg-slate-950/80 backdrop-blur-md px-3 py-2 rounded-xl border border-slate-700/60 flex items-center justify-between">
+                                        <div class="text-left">
+                                            <p class="text-xs font-semibold text-white">Rani Amelia</p>
+                                            <p class="text-[10px] text-indigo-400">SMK Ma'arif NU Tirto</p>
+                                        </div>
+                                        <span class="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-pulse" title="Aktif / Siap Praktik"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="tentang" class="py-20 bg-slate-850 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center space-y-4">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Tentang Saya</h2>
+                    <p class="text-slate-300 text-lg leading-relaxed">
+                        Saya Rani Amelia, siswi SMK Ma'arif NU Tirto jurusan Teknik Komputer dan Jaringan (TKJ). Saya memiliki pengetahuan dasar tentang jaringan komputer, pembuatan VLAN sederhana, dan pembuatan website menggunakan HTML dan CSS. Saya adalah pribadi yang disiplin, teliti, bertanggung jawab, serta memiliki semangat belajar yang tinggi untuk menambah pengalaman dan mengembangkan keterampilan di dunia kerja.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="pendidikan" class="py-20 bg-slate-900 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Riwayat Pendidikan</h2>
+                    <p class="text-slate-400 mt-2">Latar belakang pendidikan saya saat ini.</p>
+                </div>
+
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <!-- Education Item 1 -->
+                    <div class="bg-slate-800/70 border border-slate-700/70 rounded-2xl p-6 flex flex-col sm:flex-row justify-between sm:items-center gap-4 hover:border-indigo-500/50 transition-all">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-indigo-500/10 text-indigo-400 rounded-xl flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-school"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">SMK Ma'arif NU Tirto</h3>
+                                <p class="text-indigo-400 text-sm font-medium">Teknik Komputer dan Jaringan (TKJ)</p>
+                            </div>
+                        </div>
+                        <span class="px-4 py-1.5 bg-indigo-500/10 text-indigo-300 border border-indigo-500/30 text-xs font-semibold rounded-full w-fit">
+                            2024 - 2027
+                        </span>
+                    </div>
+
+                    <!-- Education Item 2 -->
+                    <div class="bg-slate-800/70 border border-slate-700/70 rounded-2xl p-6 flex flex-col sm:flex-row justify-between sm:items-center gap-4 hover:border-indigo-500/50 transition-all">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-slate-700/50 text-slate-300 rounded-xl flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">SMPN 01 Tirto</h3>
+                                <p class="text-slate-400 text-sm font-medium">Sekolah Menengah Pertama</p>
+                            </div>
+                        </div>
+                        <span class="px-4 py-1.5 bg-slate-700 text-slate-300 text-xs font-semibold rounded-full w-fit">
+                            Lulus
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="keahlian" class="py-20 bg-slate-850 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Keahlian Utama</h2>
+                    <p class="text-slate-400 mt-4 text-lg">Keterampilan teknis dan praktis yang saya kuasai.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Skill 1 -->
+                    <div class="bg-slate-800/60 border border-slate-700/60 p-6 rounded-2xl hover:border-indigo-500/50 transition-all flex items-start gap-4">
+                        <div class="w-12 h-12 bg-indigo-500/10 text-indigo-400 rounded-xl flex items-center justify-center text-2xl shrink-0">
+                            <i class="fa-solid fa-wifi"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-lg">Jaringan Wi-Fi</h4>
+                            <p class="text-slate-400 text-sm mt-1">Membuat dan mengonfigurasi jaringan Wi-Fi serta instalasi router.</p>
+                        </div>
+                    </div>
+
+                    <!-- Skill 2 -->
+                    <div class="bg-slate-800/60 border border-slate-700/60 p-6 rounded-2xl hover:border-indigo-500/50 transition-all flex items-start gap-4">
+                        <div class="w-12 h-12 bg-blue-500/10 text-blue-400 rounded-xl flex items-center justify-center text-2xl shrink-0">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-lg">HTML & CSS</h4>
+                            <p class="text-slate-400 text-sm mt-1">Memahami dasar pembuat website sederhana menggunakan HTML dan CSS.</p>
+                        </div>
+                    </div>
+
+                    <!-- Skill 3 -->
+                    <div class="bg-slate-800/60 border border-slate-700/60 p-6 rounded-2xl hover:border-indigo-500/50 transition-all flex items-start gap-4">
+                        <div class="w-12 h-12 bg-purple-500/10 text-purple-400 rounded-xl flex items-center justify-center text-2xl shrink-0">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-lg">Desain Grafis</h4>
+                            <p class="text-slate-400 text-sm mt-1">Menguasai dasar-dasar desain grafis untuk kebutuhan visual.</p>
+                        </div>
+                    </div>
+
+                    <!-- Skill 4 -->
+                    <div class="bg-slate-800/60 border border-slate-700/60 p-6 rounded-2xl hover:border-indigo-500/50 transition-all flex items-start gap-4">
+                        <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center text-2xl shrink-0">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-lg">Operasional Komputer</h4>
+                            <p class="text-slate-400 text-sm mt-1">Mengoperasikan sistem komputer dengan baik dan efisien.</p>
+                        </div>
+                    </div>
+
+                    <!-- Skill 5 -->
+                    <div class="bg-slate-800/60 border border-slate-700/60 p-6 rounded-2xl hover:border-indigo-500/50 transition-all flex items-start gap-4">
+                        <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center text-2xl shrink-0">
+                            <i class="fa-solid fa-print"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-lg">Operasional Printer</h4>
+                            <p class="text-slate-400 text-sm mt-1">Pengoperasian, pencetakan dokumen, dan perawatan perangkat printer.</p>
+                        </div>
+                    </div>
+
+                    <!-- Skill 6 -->
+                    <div class="bg-slate-800/60 border border-slate-700/60 p-6 rounded-2xl hover:border-indigo-500/50 transition-all flex items-start gap-4">
+                        <div class="w-12 h-12 bg-rose-500/10 text-rose-400 rounded-xl flex items-center justify-center text-2xl shrink-0">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-lg">Konfigurasi VLAN</h4>
+                            <p class="text-slate-400 text-sm mt-1">Pembuatan dan pengaturan VLAN sederhana dalam jaringan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Academic Practice Section -->
+        <section id="proyek" class="py-20 bg-slate-900 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Proyek Akademik & Praktik Sekolah</h2>
+                    <p class="text-slate-400 mt-4 text-lg">Pengalaman praktik keahlian Teknik Komputer dan Jaringan (TKJ).</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Practice Item 1 -->
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-6 flex flex-col justify-between hover:border-indigo-500/50 transition-all">
+                        <div>
+                            <div class="w-12 h-12 bg-indigo-600/20 text-indigo-400 rounded-xl flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Web Sederhana HTML & CSS</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Membuat website sederhana menggunakan dasar-dasar HTML dan CSS.</p>
+                        </div>
+                        <span class="inline-block mt-6 text-xs text-indigo-400 font-medium">Praktik HTML & CSS</span>
+                    </div>
+
+                    <!-- Practice Item 2 -->
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-6 flex flex-col justify-between hover:border-indigo-500/50 transition-all">
+                        <div>
+                            <div class="w-12 h-12 bg-indigo-600/20 text-indigo-400 rounded-xl flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-sliders"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Instalasi Wi-Fi & Router</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Melakukan praktik instalasi serta konfigurasi jaringan Wi-Fi dan router.</p>
+                        </div>
+                        <span class="inline-block mt-6 text-xs text-indigo-400 font-medium">Praktik Jaringan</span>
+                    </div>
+
+                    <!-- Practice Item 3 -->
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-6 flex flex-col justify-between hover:border-indigo-500/50 transition-all">
+                        <div>
+                            <div class="w-12 h-12 bg-indigo-600/20 text-indigo-400 rounded-xl flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-cable-car"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Kabel Fiber Optik & Jaringan</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Mempelajari pengenalan dan penyambungan kabel fiber optik serta kabel jaringan (UTP/LAN).</p>
+                        </div>
+                        <span class="inline-block mt-6 text-xs text-indigo-400 font-medium">Praktik Hardware/Kabel</span>
+                    </div>
+
+                    <!-- Practice Item 4 -->
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-6 flex flex-col justify-between hover:border-indigo-500/50 transition-all">
+                        <div>
+                            <div class="w-12 h-12 bg-indigo-600/20 text-indigo-400 rounded-xl flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Pemasaran Layanan Internet</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Memahami dasar-dasar pemasaran layanan koneksi internet kepada pengguna.</p>
+                        </div>
+                        <span class="inline-block mt-6 text-xs text-indigo-400 font-medium">Layanan Jaringan</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="kontak" class="py-20 bg-slate-850 border-t border-slate-800">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-slate-800 text-white rounded-3xl p-8 sm:p-12 border border-slate-700/80 shadow-2xl">
+                    <div class="text-center max-w-xl mx-auto mb-10">
+                        <h2 class="text-3xl font-bold">Hubungi Rani Amelia</h2>
+                        <p class="text-slate-400 mt-2">Terbuka untuk diskusi, tanya jawab, atau tawaran kerja praktik.</p>
+                    </div>
+
+                    <!-- Direct Info Bar -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 text-center">
+                        <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/60">
+                            <i class="fa-solid fa-envelope text-indigo-400 text-xl mb-2"></i>
+                            <p class="text-xs text-slate-400">Email</p>
+                            <p class="text-sm font-semibold text-white mt-0.5">raniamelia@gmail.com</p>
+                        </div>
+                        <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/60">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-xl mb-2"></i>
+                            <p class="text-xs text-slate-400">WhatsApp</p>
+                            <p class="text-sm font-semibold text-white mt-0.5">089529895825</p>
+                        </div>
+                        <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/60">
+                            <i class="fa-solid fa-location-dot text-rose-400 text-xl mb-2"></i>
+                            <p class="text-xs text-slate-400">Lokasi</p>
+                            <p class="text-sm font-semibold text-white mt-0.5">Pekalongan, Jawa Tengah</p>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-2">Nama Anda</label>
+                                <input type="text" required placeholder="Nama Lengkap" class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-2">Email Anda</label>
+                                <input type="email" required placeholder="nama@email.com" class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Pesan</label>
+                            <textarea rows="4" required placeholder="Tuliskan pesan atau keperluan Anda di sini..." class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                        </div>
+
+                        <!-- Notification Box -->
+                        <div id="form-message" class="hidden p-4 rounded-xl text-sm font-medium"></div>
+
+                        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3.5 rounded-xl shadow-lg transition-all">
+                            Kirim Pesan <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <div class="w-7 h-7 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
+                        RA
+                    </div>
+                    <span class="font-bold text-lg text-white">Rani Amelia</span>
+                </div>
+                
+                <p class="text-sm text-slate-500">
+                    &copy; 2026 Rani Amelia • SMK Ma'arif NU Tirto (TKJ).
+                </p>
+
+                <div class="flex space-x-5 text-lg">
+                    <a href="https://wa.me/6289529895825" target="_blank" class="hover:text-emerald-400 transition-colors" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:raniamelia@gmail.com" class="hover:text-indigo-400 transition-colors" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Toggle Mobile Menu
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        // Close Mobile Menu on Click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Form Submit Handler
+        const contactForm = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Show Success Message
+            formMessage.classList.remove('hidden');
+            formMessage.classList.add('bg-indigo-950', 'text-indigo-200', 'border', 'border-indigo-800');
+            formMessage.textContent = 'Terima kasih! Pesan Anda telah berhasil dikirim.';
+
+            // Reset Form
+            contactForm.reset();
+
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                formMessage.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
